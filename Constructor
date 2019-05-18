@@ -1,0 +1,35 @@
+void main(){
+	var student = new Student(1,"khoi");
+  
+  var student2 = Student.MyCustomConstructor();
+  student2.id = 3;
+  student2.name = "razak";
+  
+  print(" ${student2.id} and ${student2.name} is initialized");
+  
+  
+}
+
+
+class Student{
+  int id; //default value is null
+  String name; //default value is null
+  
+  //parameterized contructor
+  Student(this.id,this.name){
+   
+    print("contructor for ${this.id} and ${this.name} is initialized");
+  }
+  
+  Student.MyCustomConstructor(){ //named constructor
+  	print("this us my custom constructor");  
+  }
+  
+  void study(){
+    
+  }
+  
+  void sleep(){
+    
+  }
+}
