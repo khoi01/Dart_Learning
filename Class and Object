@@ -1,0 +1,22 @@
+void main(){
+  
+  Student student =  Student();
+  student.id = 1;
+  student.name = "khoi";
+  
+  print("${student.id} and ${student.name}");
+}
+
+
+class Student{
+  int id; //default value is null
+  String name; //default value is null
+  
+  void study(){
+    
+  }
+  
+  void sleep(){
+    
+  }
+}
